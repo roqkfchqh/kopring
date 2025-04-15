@@ -1,4 +1,4 @@
-package ko.pring.practice
+package practice
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
