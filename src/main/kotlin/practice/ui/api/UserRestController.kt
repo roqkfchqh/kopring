@@ -14,7 +14,7 @@ import practice.application.UserAuthenticationService
 class UserRestController(
     private val userAuthenticationService: UserAuthenticationService
 ) {
-    @PostMapping
+    @PostMapping("/register")
     fun generateToken(@RequestBody @Valid request: RegisterUserRequest): ResponseEntity<ApiResponse<String>> {
         val token = userAuthenticationService.generateTokenByRegister(request)
         return ResponseEntity.ok(ApiResponse.success(token))
